@@ -1,0 +1,60 @@
+<style type="text/css">
+.center {
+  display: table !important;
+  width: 100% !important;
+  height: 85% !important;
+}
+.scroll {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.item.item-input {
+  margin-bottom: 4%;
+}
+
+.marginPass{
+  margin-top: 7%;
+}
+
+.marginBtnNewUser{
+  margin-bottom: 15%;
+}
+
+#btnNewUser{
+  height: 45px;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bar {
+  background-image: none;
+}
+</style>
+
+<ion-view view-title="Login">
+  <div ng-controller="loginCtrl as session">
+    <ion-content class="center" padding="true">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Usuario">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Contraseña">
+        </label>
+        <button class="button button-block button-balanced" on-touch="session.logIn()">
+          Entrar
+        </button>
+        <div class="marginPass">
+          <h4>Recordar contraseña</h4>
+        </div>
+      </div>
+    </ion-content>
+    <div class="bar bar-footer marginBtnNewUser">
+      <button id = "btnNewUser" class="button button-block button-balanced">Nuevo Usuario</button>
+    </div>
+  </div>
+</ion-view>
+ 
