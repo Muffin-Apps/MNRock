@@ -53,8 +53,3 @@ var options = {
   "fixedPixelsTop"   :    0, // the number of pixels of your fixed header, default 0 (iOS only)
   "fixedPixelsBottom":   60  // the number of pixels of your fixed footer (f.i. a tab bar), default 0 (iOS only)
 };
-window.plugins.nativepagetransitions.slide(
-  options,
-  function (msg) {console.log("success: " + msg)}, // called when the animation has finished
-  function (msg) {alert("error: " + msg)} // called in case you pass in weird values
-);

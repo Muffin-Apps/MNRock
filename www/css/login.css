@@ -1,0 +1,21 @@
+.center-xy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elementLogin {
+  width: 90vw;
+  margin-bottom: 7%; 
+}
+
+.centerText{
+  text-align: center;
+}
+
+.bottomPosition{
+  position: fixed;
+  bottom: 0;
+}
+
+
