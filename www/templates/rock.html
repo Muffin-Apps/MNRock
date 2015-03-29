@@ -1,30 +1,8 @@
-<style type="text/css">
-
-.adjustWidth{
-	display: table !important;
-	width: 100%;
-}
-
-.marginList{
-	margin-right: 10px;
-	margin-left: 10px;
-}
-.scroll {
-  display: table-cell;
-  text-align: left;
-}
-
-.border{
-	border-style : none ;
-	border-top-style: solid;
-	border-bottom-style: solid;
-}
-</style>
 <ion-view ng-controller="rocksCtrl as rock" view-title="{{rock.name}}">
   <ion-content class="adjustWidth">
   	<div class="marginList">
   		<ion-list>
-  			<ion-item class="item border" href="#/rock/{{$index}}/assistance">
+  			<ion-item class="item border" ui-sref="assistance">
 		      	Asistencia
 		    </ion-item>
 		    <ion-item class="item border">

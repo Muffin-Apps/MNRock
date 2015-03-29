@@ -1,14 +1,13 @@
-<style type="text/css">
-
-</style>
-<ion-tabs class="tabs-striped tabs-top">
-  <ion-tab title="Asistentes" href="#/rock/{{$index}}/assistance/attend">
-  	<ion-nav-view name="tab-attend"></ion-nav-view>
-  </ion-tab>
-  <ion-tab title="No asistentes" href="#/rock/{{$index}}/assistance/notattend">
-  	<ion-nav-view name="tab-notattend"></ion-nav-view>
-  </ion-tab>
-  <ion-tab title="No confirmados" href="#/rock/{{$index}}/assistance/notconfirm">
-  	<ion-nav-view name="tab-notconfirm"></ion-nav-view>
-  </ion-tab>
-</ion-tabs>
+<ion-view view-title="Login">
+	<ion-tabs class="tabs-striped tabs-top">
+	  <ion-tab title="Asistentes" ui-sref="attend">
+	  	<ion-nav-view name="tab-attend"></ion-nav-view>
+	  </ion-tab>
+	  <ion-tab title="No asistentes" ui-sref="notattend">
+	  	<ion-nav-view name="tab-notattend"></ion-nav-view>
+	  </ion-tab>
+	  <ion-tab title="No confirmados" ui-sref="notconfirm">
+	  	<ion-nav-view name="tab-notconfirm"></ion-nav-view>
+	  </ion-tab>
+	</ion-tabs>
+</ion-view>

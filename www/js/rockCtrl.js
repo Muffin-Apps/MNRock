@@ -1,6 +1,7 @@
 var app = angular.module("starter")
 
  app.controller("rockCtrl", function($stateParams, RockFactory){
+ 	console.log("en rock control")
  	console.log($stateParams.rockId);
  	console.log(RockFactory.get($stateParams.rockId));
  	this.rock = RockFactory.get($stateParams.rockId);

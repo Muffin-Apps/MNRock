@@ -1,0 +1,19 @@
+.adjustWidth{
+	display: table !important;
+	width: 100%;
+}
+
+.marginList{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.scroll {
+  display: table-cell;
+  text-align: left;
+}
+
+.border{
+	border-style : none ;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}

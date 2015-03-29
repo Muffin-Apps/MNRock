@@ -24,18 +24,19 @@ angular.module('starter', ['ionic'])
     templateUrl: 'templates/login.html',
     controller: 'loginCtrl'
   })
-  .state('rock', {
-    url: '/rock',
+  .state('listRock', {
+    url: '/listRock',
     templateUrl: 'templates/listRock.html',
     controller: 'rocksCtrl'
   })
   .state('rock-detail', {
-      url: '/rock/:rockId',
+      url: '/listRock/{rockId}',
       templateUrl: 'templates/rock.html',
       controller: 'rockCtrl'
   })
   .state('assistance', {
-      url: '/rock/:rockId/assistance',
+      parent: 'rock-detail',
+      url: '/assistance',
       templateUrl: 'templates/assistance.html',
       controller: 'assistanceCtrl'
   });
@@ -43,13 +44,3 @@ angular.module('starter', ['ionic'])
   $urlRouterProvider.otherwise('/login');
 });
 
-var options = {
-  "direction"        : "left", // 'left|right|up|down', default 'left' (which is like 'next')
-  "duration"         :  100, // in milliseconds (ms), default 400
-  "slowdownfactor"   :    3, // overlap views (higher number is more) or no overlap (1), default 4
-  "iosdelay"         :  100, // ms to wait for the iOS webview to update before animation kicks in, default 60
-  "androiddelay"     :  150, // same as above but for Android, default 70
-  "winphonedelay"    :  250, // same as above but for Windows Phone, default 200,
-  "fixedPixelsTop"   :    0, // the number of pixels of your fixed header, default 0 (iOS only)
-  "fixedPixelsBottom":   60  // the number of pixels of your fixed footer (f.i. a tab bar), default 0 (iOS only)
-};
