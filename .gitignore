@@ -4,3 +4,7 @@
 node_modules/
 platforms/
 plugins/
+engine/
+
+Thumbs.db
+.DS_store

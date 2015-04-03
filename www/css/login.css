@@ -4,6 +4,13 @@
   justify-content: center;
 }
 
+.fullscreen{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
 .elementLogin {
   width: 90vw;
   margin-bottom: 7%; 

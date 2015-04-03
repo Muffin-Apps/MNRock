@@ -35,8 +35,7 @@ angular.module('starter', ['ionic'])
       controller: 'rockCtrl'
   })
   .state('assistance', {
-      parent: 'rock-detail',
-      url: '/assistance',
+      url: '/listRock/{rockId}/assistance',
       templateUrl: 'templates/assistance.html',
       controller: 'assistanceCtrl'
   });
